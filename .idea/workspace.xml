@@ -4,33 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="31965aa5-e038-4ed1-8d24-96eb2e09f8e3" name="Changes" comment="specifications">
-      <change afterPath="$PROJECT_DIR$/src/main/java/by/kovalski/studentinformationsystem/repository/specification/NameSpecification.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/by/kovalski/studentinformationsystem/service/Condition.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/by/kovalski/studentinformationsystem/entity/EntityTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/by/kovalski/studentinformationsystem/repository/RepositoryTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/by/kovalski/studentinformationsystem/service/ServiceTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/by/kovalski/studentinformationsystem/entity/Administrator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/by/kovalski/studentinformationsystem/entity/Administrator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/by/kovalski/studentinformationsystem/entity/Lecturer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/by/kovalski/studentinformationsystem/entity/Lecturer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/by/kovalski/studentinformationsystem/entity/Person.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/by/kovalski/studentinformationsystem/entity/Person.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/by/kovalski/studentinformationsystem/entity/Student.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/by/kovalski/studentinformationsystem/entity/Student.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/by/kovalski/studentinformationsystem/exception/RepositoryException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/by/kovalski/studentinformationsystem/exception/RepositoryException.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/by/kovalski/studentinformationsystem/exception/ServiceException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/by/kovalski/studentinformationsystem/exception/ServiceException.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/by/kovalski/studentinformationsystem/repository/impl/LectureRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/by/kovalski/studentinformationsystem/repository/impl/RepositoryImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/by/kovalski/studentinformationsystem/repository/impl/StudentRepository.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/by/kovalski/studentinformationsystem/repository/specification/lecturerspeciicationimpl/AcademicDegreeSpecification.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/by/kovalski/studentinformationsystem/repository/specification/lecturerspeciicationimpl/AcademicDegreeSpecification.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/by/kovalski/studentinformationsystem/repository/specification/lecturerspeciicationimpl/DisciplineSpecification.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/by/kovalski/studentinformationsystem/repository/specification/lecturerspeciicationimpl/DisciplineSpecification.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/by/kovalski/studentinformationsystem/repository/specification/studentspecificationimpl/AverageMarkSpecificationLess.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/by/kovalski/studentinformationsystem/repository/specification/studentspecificationimpl/AverageMarkSpecificationLess.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/by/kovalski/studentinformationsystem/repository/specification/studentspecificationimpl/AverageMarkSpecificationMore.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/by/kovalski/studentinformationsystem/repository/specification/studentspecificationimpl/AverageMarkSpecificationMore.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/by/kovalski/studentinformationsystem/repository/specification/studentspecificationimpl/GroupSpecification.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/by/kovalski/studentinformationsystem/repository/specification/studentspecificationimpl/GroupSpecification.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/by/kovalski/studentinformationsystem/service/StudentService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/by/kovalski/studentinformationsystem/service/StudentService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/by/kovalski/studentinformationsystem/service/impl/StudentServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/by/kovalski/studentinformationsystem/service/impl/StudentServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/by/kovalski/studentinformationsystem/util/IdGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/by/kovalski/studentinformationsystem/util/IdGenerator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/by/kovalski/studentinformationsystem/warehouse/Warehouse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/by/kovalski/studentinformationsystem/warehouse/Warehouse.java" afterDir="false" />
-    </list>
+    <list default="true" id="31965aa5-e038-4ed1-8d24-96eb2e09f8e3" name="Changes" comment="v2" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -115,7 +89,7 @@
       <workItem from="1703075305958" duration="21862000" />
       <workItem from="1703146420947" duration="2323000" />
       <workItem from="1703326507520" duration="17906000" />
-      <workItem from="1703416860970" duration="4097000" />
+      <workItem from="1703416860970" duration="4468000" />
     </task>
     <task id="LOCAL-00001" summary="project">
       <option name="closed" value="true" />
@@ -133,7 +107,15 @@
       <option name="project" value="LOCAL" />
       <updated>1703113610479</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="v2">
+      <option name="closed" value="true" />
+      <created>1703421068015</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1703421068015</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -142,9 +124,10 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="project" />
     <MESSAGE value="specifications" />
-    <option name="LAST_COMMIT_MESSAGE" value="specifications" />
+    <MESSAGE value="v2" />
+    <option name="LAST_COMMIT_MESSAGE" value="v2" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/StudentInformationSystem$All_in_StudentInformationSystem.ic" NAME="All in StudentInformationSystem Coverage Results" MODIFIED="1703420919510" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/StudentInformationSystem$All_in_StudentInformationSystem.ic" NAME="All in StudentInformationSystem Coverage Results" MODIFIED="1703420976765" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
   </component>
 </project>
