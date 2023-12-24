@@ -6,24 +6,18 @@ import by.kovalski.studentinformationsystem.repository.specification.Specificati
 import by.kovalski.studentinformationsystem.service.impl.StudentServiceImpl;
 
 public class AverageMarkSpecificationLess implements Specification {
-  private double mark;
+  private final double mark;
 
   public AverageMarkSpecificationLess(double mark) {
     this.mark = mark;
   }
 
-  public double getMark() {
-    return mark;
-  }
 
-  public void setMark(double mark) {
-    this.mark = mark;
-  }
 
   @Override
   public boolean specified(Person person) {
     if(person.getClass()!= Student.class)
-      throw new RuntimeException("Not instance of Student");
+     return false;
     Student student = (Student) person;
     return new StudentServiceImpl().countAverageMark(student) < mark;
   }

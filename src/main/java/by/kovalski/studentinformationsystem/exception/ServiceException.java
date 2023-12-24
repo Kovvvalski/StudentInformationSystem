@@ -1,9 +1,6 @@
 package by.kovalski.studentinformationsystem.exception;
 
-public class ServiceException extends Exception{
-  public ServiceException() {
-  }
-
+public class ServiceException extends Exception {
   public ServiceException(String message) {
     super(message);
   }
@@ -12,7 +9,4 @@ public class ServiceException extends Exception{
     super(message, cause);
   }
 
-  public ServiceException(Throwable cause) {
-    super(cause);
-  }
 }

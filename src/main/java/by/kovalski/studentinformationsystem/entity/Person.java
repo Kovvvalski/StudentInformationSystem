@@ -37,8 +37,8 @@ public abstract class Person {
    * @param telephoneNumber - valid telephone number
    */
 
-  public Person(String name, Faculty faculty, String email, String telephoneNumber) {
-    this.id = IdGenerator.detId();
+  public Person(long id, String name, Faculty faculty, String email, String telephoneNumber) {
+    this.id = id;
     this.name = name;
     this.faculty = faculty;
     setEmail(email);
@@ -138,7 +138,12 @@ public abstract class Person {
     if (this == o) return true;
     if (o == null || getClass() != o.getClass()) return false;
     Person person = (Person) o;
-    return id == person.id && name.equals(person.name) && faculty == person.faculty && telephoneNumber.equals(person.telephoneNumber) && email.equals(person.email);
+    if (name != null ? !name.equals(person.name) : person.name != null) return false;
+    if (faculty != null ? faculty != person.faculty : person.faculty != null) return false;
+    if (telephoneNumber != null ? !telephoneNumber.equals(person.telephoneNumber) : person.telephoneNumber != null)
+      return false;
+    if (email != null ? !email.equals(person.email) : person.email != null) return false;
+    return id == person.id;
   }
 
   /**
@@ -147,9 +152,8 @@ public abstract class Person {
 
   @Override
   public int hashCode() {
-    return 31 * (int) id + name.hashCode() + faculty.hashCode() + telephoneNumber.hashCode() + email.hashCode();
+    return 31 * (int) id + (name != null ? name.hashCode() : 0) + (faculty != null ? faculty.hashCode() : 0) + (telephoneNumber != null ? telephoneNumber.hashCode() : 0) + (email != null ? email.hashCode() : 0);
   }
 
-
-
+  public abstract String getPersonInformation();
 }

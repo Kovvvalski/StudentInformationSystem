@@ -14,6 +14,7 @@ public class Lecturer extends Person {
   private AcademicDegree academicDegree;
 
   /**
+   * @param id              - any ad
    * @param name            - any name
    * @param faculty         - faculty
    * @param email           - valid email
@@ -22,8 +23,8 @@ public class Lecturer extends Person {
    * @param academicDegree  - academic degree
    */
 
-  public Lecturer(String name, Faculty faculty, String email, String telephoneNumber, Disciplines discipline, AcademicDegree academicDegree) {
-    super(name, faculty, email, telephoneNumber);
+  public Lecturer(long id, String name, Faculty faculty, String email, String telephoneNumber, Disciplines discipline, AcademicDegree academicDegree) {
+    super(id, name, faculty, email, telephoneNumber);
     this.discipline = discipline;
     this.academicDegree = academicDegree;
   }
@@ -71,7 +72,10 @@ public class Lecturer extends Person {
     if (o == null || getClass() != o.getClass()) return false;
     if (!super.equals(o)) return false;
     Lecturer lecturer = (Lecturer) o;
-    return discipline == lecturer.discipline && academicDegree == lecturer.academicDegree;
+    if (discipline != null ? discipline != lecturer.discipline : lecturer.discipline != null) return false;
+    if (academicDegree != null ? academicDegree != lecturer.academicDegree : lecturer.academicDegree != null)
+      return false;
+    return true;
   }
 
   /**
@@ -80,7 +84,10 @@ public class Lecturer extends Person {
 
   @Override
   public int hashCode() {
-    return super.hashCode() + discipline.hashCode() + academicDegree.hashCode();
+    int result = super.hashCode();
+    result = 31 * result + (discipline != null ? discipline.hashCode() : 0);
+    result = 31 * result + (academicDegree != null ? academicDegree.hashCode() : 0);
+    return result;
   }
 
   /**
@@ -93,6 +100,15 @@ public class Lecturer extends Person {
             .add(getName())
             .add("discipline=" + discipline)
             .add("academicDegree=" + academicDegree)
+            .toString();
+  }
+
+  @Override
+  public String getPersonInformation() {
+    return new StringJoiner(", ")
+            .add("I'm lecturer with name " + getName())
+            .add("My discipline is " + discipline)
+            .add("My academic degree is " + academicDegree)
             .toString();
   }
 }

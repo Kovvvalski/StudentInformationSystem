@@ -1,8 +1,6 @@
 package by.kovalski.studentinformationsystem.exception;
 
-public class RepositoryException extends Exception{
-  public RepositoryException() {
-  }
+public class RepositoryException extends Exception {
 
   public RepositoryException(String message) {
     super(message);
@@ -12,7 +10,4 @@ public class RepositoryException extends Exception{
     super(message, cause);
   }
 
-  public RepositoryException(Throwable cause) {
-    super(cause);
-  }
 }

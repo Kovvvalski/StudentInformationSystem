@@ -16,7 +16,7 @@ public class Warehouse {
 
   }
 
-  public static Warehouse getInstance() {
+  public static synchronized Warehouse getInstance() {
     if (instance == null)
       instance = new Warehouse();
     return instance;
@@ -24,6 +24,10 @@ public class Warehouse {
 
   public Double put(Student key, Double value) {
     return studentsStatistics.put(key, value);
+  }
+
+  public Double get(Student student) {
+    return studentsStatistics.get(student);
   }
 
 }

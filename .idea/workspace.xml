@@ -4,30 +4,32 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="31965aa5-e038-4ed1-8d24-96eb2e09f8e3" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/by/kovalski/studentinformationsystem/entity/AcademicDegree.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/by/kovalski/studentinformationsystem/entity/Administrator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/by/kovalski/studentinformationsystem/entity/Disciplines.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/by/kovalski/studentinformationsystem/entity/Faculty.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/by/kovalski/studentinformationsystem/entity/Lecturer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/by/kovalski/studentinformationsystem/entity/Person.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/by/kovalski/studentinformationsystem/entity/Student.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/by/kovalski/studentinformationsystem/exception/RepositoryException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/by/kovalski/studentinformationsystem/exception/ServiceException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/by/kovalski/studentinformationsystem/observer/StudentObserver.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/by/kovalski/studentinformationsystem/repository/Repository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/by/kovalski/studentinformationsystem/repository/impl/LectureRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/by/kovalski/studentinformationsystem/repository/impl/StudentRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/by/kovalski/studentinformationsystem/repository/specification/Specification.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/by/kovalski/studentinformationsystem/service/StudentService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/by/kovalski/studentinformationsystem/service/impl/StudentServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/by/kovalski/studentinformationsystem/util/IdGenerator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/by/kovalski/studentinformationsystem/warehouse/Warehouse.java" afterDir="false" />
+    <list default="true" id="31965aa5-e038-4ed1-8d24-96eb2e09f8e3" name="Changes" comment="specifications">
+      <change afterPath="$PROJECT_DIR$/src/main/java/by/kovalski/studentinformationsystem/repository/specification/NameSpecification.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/by/kovalski/studentinformationsystem/service/Condition.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/by/kovalski/studentinformationsystem/entity/EntityTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/by/kovalski/studentinformationsystem/repository/RepositoryTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/by/kovalski/studentinformationsystem/service/ServiceTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/by/kovalski/studentinformationsystem/entity/Administrator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/by/kovalski/studentinformationsystem/entity/Administrator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/by/kovalski/studentinformationsystem/entity/Lecturer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/by/kovalski/studentinformationsystem/entity/Lecturer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/by/kovalski/studentinformationsystem/entity/Person.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/by/kovalski/studentinformationsystem/entity/Person.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/by/kovalski/studentinformationsystem/entity/Student.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/by/kovalski/studentinformationsystem/entity/Student.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/by/kovalski/studentinformationsystem/exception/RepositoryException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/by/kovalski/studentinformationsystem/exception/RepositoryException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/by/kovalski/studentinformationsystem/exception/ServiceException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/by/kovalski/studentinformationsystem/exception/ServiceException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/by/kovalski/studentinformationsystem/repository/impl/LectureRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/by/kovalski/studentinformationsystem/repository/impl/RepositoryImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/by/kovalski/studentinformationsystem/repository/impl/StudentRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/by/kovalski/studentinformationsystem/repository/specification/lecturerspeciicationimpl/AcademicDegreeSpecification.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/by/kovalski/studentinformationsystem/repository/specification/lecturerspeciicationimpl/AcademicDegreeSpecification.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/by/kovalski/studentinformationsystem/repository/specification/lecturerspeciicationimpl/DisciplineSpecification.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/by/kovalski/studentinformationsystem/repository/specification/lecturerspeciicationimpl/DisciplineSpecification.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/by/kovalski/studentinformationsystem/repository/specification/studentspecificationimpl/AverageMarkSpecificationLess.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/by/kovalski/studentinformationsystem/repository/specification/studentspecificationimpl/AverageMarkSpecificationLess.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/by/kovalski/studentinformationsystem/repository/specification/studentspecificationimpl/AverageMarkSpecificationMore.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/by/kovalski/studentinformationsystem/repository/specification/studentspecificationimpl/AverageMarkSpecificationMore.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/by/kovalski/studentinformationsystem/repository/specification/studentspecificationimpl/GroupSpecification.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/by/kovalski/studentinformationsystem/repository/specification/studentspecificationimpl/GroupSpecification.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/by/kovalski/studentinformationsystem/service/StudentService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/by/kovalski/studentinformationsystem/service/StudentService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/by/kovalski/studentinformationsystem/service/impl/StudentServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/by/kovalski/studentinformationsystem/service/impl/StudentServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/by/kovalski/studentinformationsystem/util/IdGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/by/kovalski/studentinformationsystem/util/IdGenerator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/by/kovalski/studentinformationsystem/warehouse/Warehouse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/by/kovalski/studentinformationsystem/warehouse/Warehouse.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,8 +39,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Enum" />
         <option value="Interface" />
+        <option value="Enum" />
         <option value="Class" />
       </list>
     </option>
@@ -46,9 +48,9 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 1
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 1
+}</component>
   <component name="ProjectId" id="2Zo4sGDvbKQWrKbmMF2FXpRZljP" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -57,22 +59,51 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "master",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
+  <component name="RunManager" selected="JUnit.All in StudentInformationSystem">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="by.kovalski.studentinformationsystem.main.Main" />
+      <module name="StudentInformationSystem" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="by.kovalski.studentinformationsystem.main.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="All in StudentInformationSystem" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="StudentInformationSystem" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="TEST_OBJECT" value="package" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.All in StudentInformationSystem" />
+        <item itemvalue="Application.Main" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -81,11 +112,39 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1703075304291</updated>
-      <workItem from="1703075305958" duration="19981000" />
+      <workItem from="1703075305958" duration="21862000" />
+      <workItem from="1703146420947" duration="2323000" />
+      <workItem from="1703326507520" duration="17906000" />
+      <workItem from="1703416860970" duration="4097000" />
     </task>
+    <task id="LOCAL-00001" summary="project">
+      <option name="closed" value="true" />
+      <created>1703111801264</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1703111801264</updated>
+    </task>
+    <task id="LOCAL-00002" summary="specifications">
+      <option name="closed" value="true" />
+      <created>1703113610479</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1703113610479</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="project" />
+    <MESSAGE value="specifications" />
+    <option name="LAST_COMMIT_MESSAGE" value="specifications" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/StudentInformationSystem$All_in_StudentInformationSystem.ic" NAME="All in StudentInformationSystem Coverage Results" MODIFIED="1703420919510" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
   </component>
 </project>

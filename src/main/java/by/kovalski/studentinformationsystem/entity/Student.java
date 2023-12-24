@@ -32,8 +32,8 @@ public class Student extends Person {
    * @param disciplines     - disciplines
    * @param group           - course of the student
    */
-  public Student(String name, Faculty faculty, String email, String telephoneNumber, List<Disciplines> disciplines, String group) {
-    super(name, faculty, email, telephoneNumber);
+  public Student(long id,String name, Faculty faculty, String email, String telephoneNumber, List<Disciplines> disciplines, String group) {
+    super(id,name, faculty, email, telephoneNumber);
     setDisciplines(disciplines);
     this.group = group;
     notifyObserver();
@@ -55,6 +55,9 @@ public class Student extends Person {
 
   public void setDisciplines(List<Disciplines> disciplines) {
     this.disciplines = new ArrayList<>(disciplines);
+    for(Disciplines discipline: disciplines){
+      marks.put(discipline,new ArrayList<>());
+    }
   }
 
   /**
@@ -92,7 +95,10 @@ public class Student extends Person {
     if (o == null || getClass() != o.getClass()) return false;
     if (!super.equals(o)) return false;
     Student student = (Student) o;
-    return group.equals(student.group) && disciplines.equals(student.disciplines) && marks.equals(student.marks);
+    if (group != null ? !group.equals(student.group) : student.group != null) return false;
+    if (disciplines != null ? !disciplines.equals(student.disciplines) : student.disciplines != null) return false;
+    if (marks != null ? !marks.equals(student.marks) : student.marks != null) return false;
+    return true;
   }
 
   /**
@@ -101,18 +107,16 @@ public class Student extends Person {
 
   @Override
   public int hashCode() {
-    return super.hashCode() + group.hashCode() + disciplines.hashCode() + marks.hashCode();
+    int result = super.hashCode();
+    result = 31 * result + (group != null ? group.hashCode() : 0);
+    result = 31 * result + (disciplines != null ? disciplines.hashCode() : 0);
+    return result;
   }
 
   /**
    * @param discipline - discipline to set mark
    * @param mark       - mark
    */
-
-  public void takeMark(Disciplines discipline, int mark) {
-    marks.get(discipline).add(mark);
-    notifyObserver();
-  }
 
   /**
    * @return string of an object
@@ -128,8 +132,26 @@ public class Student extends Person {
             .toString();
   }
 
+  /**
+   * @return info about student
+   */
+
+  @Override
+  public String getPersonInformation() {
+    return new StringJoiner(", ")
+            .add("I'm student with name " + getName())
+            .add("from group " + group)
+            .add("learning disciplines " + disciplines.toString())
+            .toString();
+  }
+
   private void notifyObserver() {
     observer.changeStudentStatistics(this);
+  }
+
+  public void takeMark(Disciplines discipline, int mark) {
+    marks.get(discipline).add(mark);
+    notifyObserver();
   }
 
 }

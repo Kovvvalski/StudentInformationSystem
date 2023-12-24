@@ -3,10 +3,12 @@ package by.kovalski.studentinformationsystem.service.impl;
 import by.kovalski.studentinformationsystem.entity.Disciplines;
 import by.kovalski.studentinformationsystem.entity.Student;
 import by.kovalski.studentinformationsystem.exception.ServiceException;
+import by.kovalski.studentinformationsystem.service.Condition;
 import by.kovalski.studentinformationsystem.service.StudentService;
 
 import java.util.ArrayList;
 import java.util.Collection;
+import java.util.List;
 
 public class StudentServiceImpl implements StudentService {
   /**
@@ -46,5 +48,17 @@ public class StudentServiceImpl implements StudentService {
     if (counter != 0)
       return (double) counter / marks.size();
     return 0;
+  }
+
+  /**
+   * sorts list of student's by comparator, that uniq for every enum element
+   *
+   * @param students  - list of students
+   * @param condition - enum element
+   */
+
+  @Override
+  public void sortByCondition(List<Student> students, Condition condition) {
+    students.sort(condition.getComparator());
   }
 }
